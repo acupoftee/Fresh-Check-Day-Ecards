@@ -1,0 +1,44 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Wentworth CSS Ecard Generator</title>
+    </head>
+    <body>
+        <h1>Wentworth CSS E-Card Maker</h1>
+        <div id="create">
+            <h2>Design Card</h2>
+            <textarea id="message" rows=7 cols=20 placeholder="Write your message here."></textarea>
+            <input type="text" id="recipient" size="25" placeholder="Recipient"><br> 
+            <input type="text" id="sender" size="25" placeholder="Sender"><br> 
+            <input type="text" id="image_utl" size="25" placeholder="Image URL"><br>
+            <button
+                class="jscolor {valueElement: 'chosen_value', value: 'FFF', onFineChange: 'setTextColor(this)'}"
+                style="border:1px solid black; margin-right:5px">
+                Pick card background color 
+            </button>
+            <script>
+                function setTextColor(picker) {
+                    document.getElementById('card_container').style.backgroundColor = '#' + picker.toString();
+                    showPreview();
+                }
+            </script>
+            <div id="select_bg">&nbsp;</div>
+        </div>
+        <button type="button" onclick="togglePreview()">Toggle preview</button>
+        <div id="cardurl">&nbsp;</div>
+        
+        <div id="preview_container">
+            <h2>Preview Card</h2>
+            <div id="card_container">
+                <div id="preview">
+                    <center>
+                        <img id="card_image"/><br>
+                        <p id="message_preview">&nbsp;</p>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
