@@ -4,10 +4,12 @@ body {
 #create {
   width: 50vw;
   max-width: 600px;
+  float: center;
 }
 #card_image {
   margin: 25px;
   width: 40vw;
+  float: center
 }
 #card_container {
   border: 2px solid black;
@@ -19,9 +21,11 @@ body {
   font-size: 120%;
   color: #fff;
   text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  float: center;
 }
 footer {
   margin: 15px 0 15px 0;
+  float: center;
 }
 
 /* Larger than mobile screen */

@@ -64,4 +64,3 @@ function view_card(card_obj) {
   card.style.backgroundColor = card_obj.bc;
   card.style.backgroundImage = 'url("' + bp + '")';
 }
-0
