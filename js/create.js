@@ -47,9 +47,9 @@ function load_pattern() {
 
 function load_icon() {
   icon_menu = document.getElementById("icon_menu");
-  ic = "https://github.com/bethyd/Circles/blob/master/svg/" + icon_menu.value + ".svg";
+  ic = "https://dohliam.github.io/elegant-circles/svg/" + icon_menu.value + ".svg";
   if (icon_menu.value == "Select Image") { ic = "" }
-  document.getElementById("image_url").value = ic;
+ // document.getElementById("image_url").value = ic;
   return ic;
 }
 
